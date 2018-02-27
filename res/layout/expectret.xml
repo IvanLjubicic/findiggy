@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout02"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter possible return (%) and then it&apos;s probability (%)" />
+
+            <EditText
+                android:id="@+id/etInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter possible return"
+                android:inputType="number|numberSigned|numberDecimal" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10" >
+
+                <Button
+                    android:id="@+id/bAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="Add" />
+
+                <Button
+                    android:id="@+id/bCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="Check the entries" />
+
+                <Button
+                    android:id="@+id/bDel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Delete last entry" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bSolve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solve" />
+
+            <Button
+                android:id="@+id/bInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Info" />
+
+            <TextView
+                android:id="@+id/tvSolution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click button &apos;Solve&apos; for solution" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

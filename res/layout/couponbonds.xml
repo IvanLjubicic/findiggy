@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout02"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvFaceValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Face Value" />
+
+            <EditText
+                android:id="@+id/etFaceValue"
+                android:layout_width="201dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/tvCouponValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coupon Value" />
+
+            <EditText
+                android:id="@+id/etCouponValue"
+                android:layout_width="201dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interest Rate" />
+
+            <SeekBar
+                android:id="@+id/sbInterest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etInterestRate"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maturity Date" />
+
+            <EditText
+                android:id="@+id/etMDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number Of Coupons Per Annum" />
+
+            <EditText
+                android:id="@+id/etCouponsPA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/bSolve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solve" />
+
+            <Button
+                android:id="@+id/bInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Info" />
+
+            <TextView
+                android:id="@+id/tvSolution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click button &apos;Solve&apos; for solution" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
